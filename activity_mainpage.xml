@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   tools:context=".Mainpage"
+   android:orientation="vertical"
+   >
+   <EditText
+       android:id="@+id/Quantity"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:ems="10"
+       android:inputType="number"
+       android:hint="Quantity"
+       />
+   <EditText
+       android:id="@+id/Food_name"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:ems="10"
+       android:inputType="textPersonName"
+       android:hint="Food Name"
+       />
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:text="Load All Food"
+       android:onClick="load"
+       tools:ignore="OnClick" />
+   <TextView
+       android:id="@+id/result"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:hint="Result"
+       android:textSize="30dp"
+       />
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:onClick="add"
+       android:text="ADD"
+       tools:ignore="OnClick" />
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:onClick="update"
+       android:text="UPDATE"
+       tools:ignore="OnClick" />
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:onClick="delete"
+       android:text="DELETE By Quantity"
+       tools:ignore="OnClick" />
+</LinearLayout>
